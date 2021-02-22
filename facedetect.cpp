@@ -1,6 +1,6 @@
-#include <opencv4/opencv2/highgui.hpp>
-#include <opencv4/opencv2/imgproc.hpp>
-#include <opencv4/opencv2/objdetect.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/objdetect.hpp>
 #include <iostream>
 
 int main(){
@@ -8,7 +8,7 @@ int main(){
     cv::Mat img;
     cv::Mat fliped, grayimg, resized;
     cv::CascadeClassifier faceCascade;
-    faceCascade.load("/home/mugesh/projects/opencv/haarcascade_frontalface_default.xml");
+    faceCascade.load("haarcascade_frontalface_default.xml");
     while (true)
     {
         cap.read(img);
